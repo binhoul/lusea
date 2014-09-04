@@ -1,14 +1,11 @@
 <?php render('_header',array('title'=>$title))?>
 
-<div data-role="page">
-  <div data-role="content">
-    <form action='index.php'>
+    <form action='/index.php'>
+    <?php echo __DIR__?>
       <div data-role="fieldcontain">
-        <label for="cn_name">卡牌名称：</label>
+        <label for="cn_name"><h4>卡牌名称：</h4></label>
         <input type="text" name="cn_name" id="cn_name">
         <input type="submit" data-inline="true" value="查询">
       </div>
     </form>
-  </div>
-</div>
 <?php render('_footer')?>

@@ -1,6 +1,6 @@
 <?php
 
-function render($template, $var = array()){
+function render($template, $vars = array()){
 	
 	//接受
 	extract($vars);
@@ -20,3 +20,15 @@ function render($template, $var = array()){
 		include "views/$template.php";
 	}
 }
+
+function formatTitle($title = ''){
+    if($title){
+        $title.= ' | ';
+    }
+
+    $title .= $GLOBALS['defaultTitle'];
+
+    return $title;
+}
+
+?>

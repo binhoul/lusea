@@ -1,7 +1,7 @@
 <?php
 
 require_once("includes/main.php");
-
+header("Content-Type: text/html; charset=utf-8");
 try {
 	if($_GET["cn_name"]){
 		$c = new CardController();
