@@ -10,7 +10,7 @@ class CardController{
 		//Fetch a random card:
 		
 		render('card',array(
-			'title'		=> '卡牌查询',
+			'title'		=> $result[0][0],
 			'card'		=> $result[0],
 			));
 

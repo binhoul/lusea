@@ -12,7 +12,7 @@
 </head> 
 <body> 
 
-<div data-role="page">
+<div data-role="page" data-theme='b'>
 
 	<div data-role="header" data-theme="b">
 	    <a href="./" data-icon="home" data-iconpos="notext" data-transition="fade">Home</a>
